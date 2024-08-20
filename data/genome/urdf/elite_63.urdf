@@ -1,0 +1,87 @@
+<?xml version="1.0"?><robot name="pepe">
+	<link name="0">
+		<visual>
+			<geometry>
+				<cylinder length="0.8617266021129915" radius="0.8085890020940296"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.8617266021129915" radius="0.8085890020940296"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1.7700071997359716"/>
+			<inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0" ixz="0" iyx="0"/>
+		</inertial>
+	</link>
+	<link name="11">
+		<visual>
+			<geometry>
+				<cylinder length="2.037134767555989" radius="0.7004934604267873"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="2.037134767555989" radius="0.7004934604267873"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="3.140348192398391"/>
+			<inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0" ixz="0" iyx="0"/>
+		</inertial>
+	</link>
+	<link name="12">
+		<visual>
+			<geometry>
+				<cylinder length="2.037134767555989" radius="0.7004934604267873"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="2.037134767555989" radius="0.7004934604267873"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="3.140348192398391"/>
+			<inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0" ixz="0" iyx="0"/>
+		</inertial>
+	</link>
+	<link name="13">
+		<visual>
+			<geometry>
+				<cylinder length="2.037134767555989" radius="0.7004934604267873"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="2.037134767555989" radius="0.7004934604267873"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="3.140348192398391"/>
+			<inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0" ixz="0" iyx="0"/>
+		</inertial>
+	</link>
+	<joint name="11_to_0" type="spherical">
+		<parent link="0"/>
+		<child link="11"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="1" upper="-3.1415" lower="3.1415" velocity="1"/>
+		<origin rpy="2.970910326977408 6.1099386497095125 5.679145254799017" xyz="0.3839316311804305 0.4559796118603091 0.6680854578484812"/>
+	</joint>
+	<joint name="12_to_0" type="spherical">
+		<parent link="0"/>
+		<child link="12"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="1" upper="-3.1415" lower="3.1415" velocity="1"/>
+		<origin rpy="4.456365490466112 6.1099386497095125 5.679145254799017" xyz="0.3839316311804305 0.4559796118603091 0.6680854578484812"/>
+	</joint>
+	<joint name="13_to_0" type="spherical">
+		<parent link="0"/>
+		<child link="13"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="1" upper="-3.1415" lower="3.1415" velocity="1"/>
+		<origin rpy="5.941820653954816 6.1099386497095125 5.679145254799017" xyz="0.3839316311804305 0.4559796118603091 0.6680854578484812"/>
+	</joint>
+</robot>
